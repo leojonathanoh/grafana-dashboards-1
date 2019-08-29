@@ -4386,7 +4386,7 @@
         "multi": true,
         "name": "code",
         "options": [],
-        "query": "label_values(haproxy_server_http_responses_total{instance=~\"$host:$port\", backend=~\"$backend\", server=~\"$server\"}, code)",
+        "query": "label_values(haproxy_backend_http_responses_total{instance=~\"$host:$port\", backend=~\"$backend\"}, code)",
         "refresh": 1,
         "regex": "",
         "sort": 1,
